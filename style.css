@@ -1,0 +1,15 @@
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+body {
+    height: 100vh;
+    position: absolute;
+    top: 25%;
+    left: 35%;
+}
+
+.answer {
+    color: white;
+}
