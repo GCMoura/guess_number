@@ -1,15 +1,62 @@
 html {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
 }
 
-body {
-    height: 100vh;
-    position: absolute;
-    top: 25%;
-    left: 35%;
+.game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .answer {
     color: white;
+    padding: 5px;
+}
+
+.count {
+    color: #fff;
+    padding: 5px;
+}
+
+#number {
+    height: 30px;
+    width: 60px;
+    font-size: 18px;
+    margin: 0px 25px 0px 15px;
+}
+
+.hintBtn {
+    box-shadow: 0px 10px 14px -7px #3e7327;
+    background: linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
+    background-color: #77b55a;
+    border-radius: 4px;
+    border: 1px solid #4b8f29;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 14px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #5b8a3c;
+}
+
+.newGameBtn {
+    box-shadow: inset 0px 1px 0px 0px #54a3f7;
+    background: linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+    background-color: #007dc1;
+    border-radius: 4px;
+    border: 1px solid #124d77;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 14px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #154682;
 }

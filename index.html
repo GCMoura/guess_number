@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Guess Number</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Jogo Adivinhe um número</h1>
-    <p>
-        Selecionamos um número aleatório entre 1 e 100. <br>
-        Veja se consegue adivinhar em 10 chances ou menos. <br>
-        Lhe diremos se seu palpite está com valor alto ou baixo.
-    </p>
-    <p>Digite seu número :
-        <input type="number" id="number" >
-        <input type="button" value="Enviar palpite" id="hint" onclick="hint()">
-    </p>
-    <p>
-        Palpites anteriores: <span id="last-hint"> </span>
-    </p>
-    <div class="answer">  </div>
-    <br>
-    <input type="button" value="Iniciar novo jogo" id="newGame" onclick="newGame()">
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Guess Number</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="game">
+        <h1>Adivinhe o número</h1>
+        <p>
+            Selecionamos um número aleatório entre 1 e 100. <br /> Veja se consegue adivinhar em 10 chances ou menos. <br />
+        </p>
+        <p>
+            Digite seu número :
+            <input type="number" id="number" />
+            <button class="hintBtn" onclick="hint()">Enviar palpite</button>
+        </p>
+        <p>Palpites anteriores: <span id="last-hint"> </span></p>
+        <div class="answer"></div>
+        <br />
+        <div class="count"></div>
+        <br />
+        <button onclick="newGame()" class="newGameBtn">Iniciar novo jogo</button>
+    </div>
     <script src="app.js"></script>
 </body>
+
 </html>
