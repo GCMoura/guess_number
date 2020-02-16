@@ -70,3 +70,20 @@ html {
         font-size: 20px;
     }
 }
+
+@media (max-width: 415px) {
+    html {
+        font-size: 16px;
+    }
+    .hintBtn {
+        padding: 5px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 380px) {
+    .hintBtn {
+        padding: 5px;
+        font-size: 16px;
+    }
+}
